@@ -5,7 +5,12 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
       forEach(hamburgers, function(hamburger) {
         hamburger.addEventListener("click", function() {
         $( "header" ).toggleClass( "visable" )
+        $( "ul>li.menu_item_link>a" ).toggleClass( "animate__animated animate__fadeInDown " )
           this.classList.toggle("is-active");
         }, false);
       });
     }
+
+
+
+   

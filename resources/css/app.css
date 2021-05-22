@@ -2,9 +2,9 @@
 @import url('bootstrap-grid.min.css');
 @import url('hamburgers.min.css');
 
+/* @import 'animate/animate' */
 
-
-/* @import 'tailwindcss/base';
+@import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities'; */
+@import 'tailwindcss/utilities';
 

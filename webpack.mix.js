@@ -12,9 +12,14 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', );
+    .postCss('resources/css/app.css', 'public/css',[
+        require("tailwindcss"),
+    ]);
+
+
 mix.copyDirectory('resources/images', 'public/images');
 mix.sass('resources/sass/home.sass', 'public/css');
+mix.sass('resources/sass/fixed_footer.sass', 'public/css');
 mix.js('resources/js/hamburger.js', 'public/js'); 
 
 

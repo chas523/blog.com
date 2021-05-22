@@ -17,6 +17,7 @@ if (hamburgers.length > 0) {
   forEach(hamburgers, function (hamburger) {
     hamburger.addEventListener("click", function () {
       $("header").toggleClass("visable");
+      $("ul>li.menu_item_link>a").toggleClass("animate__animated animate__fadeInDown ");
       this.classList.toggle("is-active");
     }, false);
   });

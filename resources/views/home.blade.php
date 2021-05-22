@@ -1,43 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+@extends('layouts.layout')
+
+@section('title', 'Home')
+
+@section('page_style')
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo"><a href="/"><img src="{{asset('images/logo.png') }}" alt="logo"></a></div>
-                <ul class="menu_item">
-                    <li class="menu_item_link"><a href="/lifestyle">lifestyle</a></li>
-                    <li class="menu_item_link"><a href="/photodiary">photodiary</a></li>
-                    <li class="menu_item_link"><a href="/music">music</a></li>
-                    <li class="menu_item_link"><a href="/travel">travel</a></li>
-                    @if (Route::has('login'))
-                        @auth
-                            <li class="menu_item_link"><a href="{{ url('/dashboard') }}">Dashboard</a></li>
-                        @else
-                            <li class="menu_item_link"><a href="{{ route('login') }}">Log in</a></li>
-                            @if (Route::has('register'))
-                                <li class="menu_item_link"><a href="{{ route('register') }}">register</a></li>
-                            @endif
-                        @endauth
-                    @endif
-                </ul>
-                <button class="hamburger hamburger--squeeze " type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </nav>
-        </div>
-    </header>
-    
+@endsection
+
+@section('content')
     <div class="top-img">
         <div class="container">
             <img src="{{asset('images/bg-image.png') }}" alt="top-img" class="img">
@@ -147,29 +116,4 @@
             <button type="button">Load more</button>
         </div>
     </section>
-
-
-    <footer>
-        <div class="container">
-            <div class="footer_item">
-                <div class="block_1">
-                    <a href="#">Terms and conditions</a>
-                    <a href="#">Privacy</a>
-                </div>
-
-                <div class="block_2">
-                    <span>Follow</span>
-                    <div class="link">
-                        <a href="#"> <img src="{{asset('images/facebook.png') }}" alt="facebook" class="img"></a>
-                        <a href="#"> <img src="{{asset('images/twitter.png') }}" alt="twitter" class="img"></a>
-                        <a href="#"> <img src="{{asset('images/instagram.png') }}" alt="instagram" class="img"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="{{ asset("js/hamburger.js") }}"></script>
-
-</body>
-</html>
+    @endsection

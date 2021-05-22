@@ -2,6 +2,8 @@
     "/js/app.js": "/js/app.js",
     "/js/hamburger.js": "/js/hamburger.js",
     "/css/app.css": "/css/app.css",
+    "/css/fixed_footer.css": "/css/fixed_footer.css",
+    "/css/home.css": "/css/home.css",
     "/images/bg-image.png": "/images/bg-image.png",
     "/images/facebook.png": "/images/facebook.png",
     "/images/instagram.png": "/images/instagram.png",
@@ -13,6 +15,5 @@
     "/images/photodiary_1.png": "/images/photodiary_1.png",
     "/images/photodiary_2.png": "/images/photodiary_2.png",
     "/images/send_icon.png": "/images/send_icon.png",
-    "/images/twitter.png": "/images/twitter.png",
-    "/css/home.css": "/css/home.css"
+    "/images/twitter.png": "/images/twitter.png"
 }
