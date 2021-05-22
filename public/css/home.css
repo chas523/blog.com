@@ -22,6 +22,9 @@ header nav .menu_item_link a {
   line-height: 24px;
   text-transform: uppercase;
 }
+header nav .hamburger {
+  display: none;
+}
 
 .top-img .container .img {
   margin-top: 72px;
@@ -180,4 +183,64 @@ footer .footer_item .block_2 .link {
   font-family: "Playfair Display";
   font-size: 20px;
   font-weight: 400;
+}
+
+.visable {
+  transition: 0.5s all;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  background-color: white;
+}
+.visable nav .menu_item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 60px;
+}
+.visable nav .menu_item_link {
+  padding-top: 20px;
+}
+.visable nav .menu_item_link a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .photodiary {
+    padding-left: 46px;
+  }
+
+  .lifestyle, .more {
+    padding-left: 7px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    transition: 0.5s all;
+  }
+  header nav .menu_item {
+    display: none;
+  }
+  header nav .logo {
+    padding-top: 19px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  header nav .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+  }
 }

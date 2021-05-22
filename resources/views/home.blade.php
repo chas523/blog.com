@@ -29,6 +29,11 @@
                         @endauth
                     @endif
                 </ul>
+                <button class="hamburger hamburger--squeeze " type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </nav>
         </div>
     </header>
@@ -71,11 +76,7 @@
     </section>
     <section class="lifestyle">
         <div class="container">
-            {{-- <div class="row">
-                <div class="col">
-                    <div class="subtitle" id="lifestyle">lifestyle</div>
-                </div>
-            </div> --}}
+          
 
             <div class="row">
                 <div class="col-lg-6">
@@ -167,6 +168,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="{{ asset("js/hamburger.js") }}"></script>
 
 </body>
 </html>
